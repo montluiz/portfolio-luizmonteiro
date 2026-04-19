@@ -13,13 +13,6 @@ type Project = {
 
 const projects: Project[] = [
 	{
-		title: 'portfolio-luizmonteiro',
-		description:
-			'Portfólio pessoal responsivo desenvolvido com React, TypeScript e Vite, com tema claro/escuro, animações sutis e seções organizadas para apresentar habilidades, projetos e contato.',
-		tags: ['React', 'TypeScript', 'Vite', 'Framer Motion'],
-		status: 'Atual',
-	},
-	{
 		title: 'Landing Page Premium',
 		description:
 			'Uma landing page com foco em conversão, animações sutis e layout responsivo para destacar produto ou serviço.',
