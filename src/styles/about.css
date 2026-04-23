@@ -23,7 +23,7 @@
 	font-size: 0.9rem;
 	line-height: 1.2;
 	color: var(--accent);
-	text-shadow: 0 0 14px rgba(216, 106, 97, 0.14);
+	text-shadow: 0 0 14px rgba(251, 146, 60, 0.16);
 	letter-spacing: 0.16em;
 	text-transform: uppercase;
 }
@@ -83,7 +83,7 @@
 .about__link:hover {
 	transform: translateY(-1px);
 	background: var(--accent-soft);
-	border-color: rgba(216, 106, 97, 0.18);
+	border-color: rgba(251, 146, 60, 0.22);
 }
 
 @media (max-width: 720px) {

@@ -1,8 +1,8 @@
 :root {
   color-scheme: dark;
-  --app-bg: radial-gradient(circle at 14% 14%, rgba(216, 106, 97, 0.08), transparent 24%), radial-gradient(circle at 86% 8%, rgba(216, 106, 97, 0.05), transparent 18%), radial-gradient(circle at 10% 8%, rgba(255, 255, 255, 0.035), transparent 22%), linear-gradient(180deg, #050507 0%, #09090c 55%, #060608 100%);
-  --hero-bg: radial-gradient(circle at 92% 8%, rgba(216, 106, 97, 0.08), transparent 18%), radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.03), transparent 26%), linear-gradient(180deg, #050507 0%, #09090c 60%, #111114 100%);
-  --section-bg: radial-gradient(circle at 16% 14%, rgba(216, 106, 97, 0.06), transparent 24%), radial-gradient(circle at 84% 18%, rgba(255, 255, 255, 0.03), transparent 22%), linear-gradient(180deg, #060608 0%, #09090c 100%);
+  --app-bg: radial-gradient(circle at 14% 14%, rgba(251, 146, 60, 0.08), transparent 24%), radial-gradient(circle at 86% 8%, rgba(251, 146, 60, 0.05), transparent 18%), radial-gradient(circle at 10% 8%, rgba(255, 255, 255, 0.035), transparent 22%), linear-gradient(180deg, #050507 0%, #09090c 55%, #060608 100%);
+  --hero-bg: radial-gradient(circle at 92% 8%, rgba(251, 146, 60, 0.08), transparent 18%), radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.03), transparent 26%), linear-gradient(180deg, #050507 0%, #09090c 60%, #111114 100%);
+  --section-bg: radial-gradient(circle at 16% 14%, rgba(251, 146, 60, 0.06), transparent 24%), radial-gradient(circle at 84% 18%, rgba(255, 255, 255, 0.03), transparent 22%), linear-gradient(180deg, #060608 0%, #09090c 100%);
   --surface-bg: rgba(18, 18, 22, 0.72);
   --surface-bg-strong: rgba(24, 24, 28, 0.9);
   --surface-bg-soft: rgba(255, 255, 255, 0.025);
@@ -11,9 +11,9 @@
   --text: #f5eefe;
   --text-soft: rgba(245, 238, 254, 0.72);
   --text-muted: rgba(245, 238, 254, 0.58);
-  --accent: #d86a61;
-  --accent-2: #b8574f;
-  --accent-soft: rgba(216, 106, 97, 0.08);
+  --accent: #fb923c;
+  --accent-2: #f97316;
+  --accent-soft: rgba(251, 146, 60, 0.12);
   --shadow: rgba(0, 0, 0, 0.22);
   --shadow-strong: rgba(0, 0, 0, 0.32);
   --header-bg: rgba(0, 0, 0, 0.42);
@@ -40,9 +40,9 @@ html[data-theme='dark'] {
 
 html[data-theme='light'] {
   color-scheme: light;
-  --app-bg: radial-gradient(circle at 10% 0%, rgba(216, 106, 97, 0.08), transparent 28%), linear-gradient(180deg, #fbfaf8 0%, #f1ede8 100%);
-  --hero-bg: radial-gradient(circle at 92% 8%, rgba(216, 106, 97, 0.08), transparent 20%), radial-gradient(circle at 18% 18%, rgba(28, 16, 38, 0.04), transparent 26%), linear-gradient(180deg, #fffdfb 0%, #f5f1eb 56%, #ece7e1 100%);
-  --section-bg: radial-gradient(circle at 16% 14%, rgba(216, 106, 97, 0.05), transparent 24%), radial-gradient(circle at 84% 18%, rgba(28, 16, 38, 0.025), transparent 22%), linear-gradient(180deg, #f7f3ee 0%, #ede8e1 100%);
+  --app-bg: radial-gradient(circle at 10% 0%, rgba(234, 88, 12, 0.08), transparent 28%), linear-gradient(180deg, #fbfaf8 0%, #f1ede8 100%);
+  --hero-bg: radial-gradient(circle at 92% 8%, rgba(234, 88, 12, 0.08), transparent 20%), radial-gradient(circle at 18% 18%, rgba(28, 16, 38, 0.04), transparent 26%), linear-gradient(180deg, #fffdfb 0%, #f5f1eb 56%, #ece7e1 100%);
+  --section-bg: radial-gradient(circle at 16% 14%, rgba(234, 88, 12, 0.05), transparent 24%), radial-gradient(circle at 84% 18%, rgba(28, 16, 38, 0.025), transparent 22%), linear-gradient(180deg, #f7f3ee 0%, #ede8e1 100%);
   --surface-bg: rgba(255, 255, 255, 0.8);
   --surface-bg-strong: rgba(255, 255, 255, 0.92);
   --surface-bg-soft: rgba(28, 16, 38, 0.02);
@@ -51,9 +51,9 @@ html[data-theme='light'] {
   --text: #22132d;
   --text-soft: rgba(34, 19, 45, 0.74);
   --text-muted: rgba(34, 19, 45, 0.58);
-  --accent: #b74f46;
-  --accent-2: #8f3f38;
-  --accent-soft: rgba(183, 79, 70, 0.08);
+  --accent: #ea580c;
+  --accent-2: #c2410c;
+  --accent-soft: rgba(234, 88, 12, 0.12);
   --shadow: rgba(34, 19, 45, 0.1);
   --shadow-strong: rgba(34, 19, 45, 0.16);
   --header-bg: rgba(255, 255, 255, 0.76);

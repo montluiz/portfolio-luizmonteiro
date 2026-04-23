@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+import dashboardImage from '../../assets/projects/dashboard.png'
+import landingPageImage from '../../assets/projects/landing-page.png'
 import '../../styles/projects.css'
 
 type Project = {
@@ -6,6 +8,8 @@ type Project = {
 	description: string
 	tags: string[]
 	status: string
+	image?: string
+	imageAlt?: string
 	descriptionClassName?: string
 	demo?: string
 	code?: string
@@ -18,6 +22,8 @@ const projects: Project[] = [
 			'Uma landing page com foco em conversão, animações sutis e layout responsivo para destacar produto ou serviço.',
 		tags: ['React', 'CSS', 'Motion'],
 		status: 'Em destaque',
+		image: landingPageImage,
+		imageAlt: 'Prévia da landing page premium',
 	},
 	{
 		title: 'Dashboard Analítico',
@@ -25,14 +31,9 @@ const projects: Project[] = [
 			'Interface administrativa com cards, métricas e hierarquia visual para leitura rápida de dados.',
 		tags: ['React', 'TypeScript', 'UI'],
 		status: 'Responsivo',
+		image: dashboardImage,
+		imageAlt: 'Prévia do dashboard analítico',
 		descriptionClassName: 'projects__description--large',
-	},
-	{
-		title: 'Sistema de Portfólio',
-		description:
-			'Uma estrutura de portfólio moderna pensada para apresentar habilidades, projetos e contatos com clareza.',
-		tags: ['Design', 'Frontend', 'Layout'],
-		status: 'Atual',
 	},
 ]
 
@@ -45,19 +46,31 @@ function ProjectCard({ project }: { project: Project }) {
 			viewport={{ once: true, amount: 0.25 }}
 			transition={{ duration: 0.55, ease: 'easeOut' }}
 		>
-			<div className="projects__card-top">
-				<span className="projects__status">{project.status}</span>
-				<h3 className="projects__title">{project.title}</h3>
+			<div className="projects__media">
+				{project.image ? (
+					<img className="projects__image" src={project.image} alt={project.imageAlt ?? project.title} loading="lazy" />
+				) : (
+					<div className="projects__image-fallback" aria-hidden="true">
+						<span>{project.title}</span>
+					</div>
+				)}
 			</div>
 
-			<p className={`projects__description ${project.descriptionClassName ?? ''}`.trim()}>{project.description}</p>
+			<div className="projects__content">
+				<div className="projects__card-top">
+					<span className="projects__status">{project.status}</span>
+					<h3 className="projects__title">{project.title}</h3>
+				</div>
 
-			<div className="projects__tags" aria-label={`Tecnologias de ${project.title}`}>
-				{project.tags.map((tag) => (
-					<span key={tag} className="projects__tag">
-						{tag}
-					</span>
-				))}
+				<p className={`projects__description ${project.descriptionClassName ?? ''}`.trim()}>{project.description}</p>
+
+				<div className="projects__tags" aria-label={`Tecnologias de ${project.title}`}>
+					{project.tags.map((tag) => (
+						<span key={tag} className="projects__tag">
+							{tag}
+						</span>
+					))}
+				</div>
 			</div>
 		</motion.article>
 	)

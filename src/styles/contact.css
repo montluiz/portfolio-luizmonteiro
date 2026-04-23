@@ -14,7 +14,7 @@
 	inset: 0;
 	pointer-events: none;
 	background-image:
-		radial-gradient(circle at 10% 18%, rgba(216, 106, 97, 0.08) 0 1px, transparent 1.6px),
+		radial-gradient(circle at 10% 18%, rgba(251, 146, 60, 0.08) 0 1px, transparent 1.6px),
 		radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.06) 0 1px, transparent 1.6px),
 		radial-gradient(circle at 48% 14%, rgba(255, 255, 255, 0.07) 0 1px, transparent 1.6px),
 		radial-gradient(circle at 70% 24%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1.6px),
@@ -38,7 +38,7 @@
 	border-radius: 22px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	background:
-		linear-gradient(180deg, rgba(216, 106, 97, 0.025), rgba(255, 255, 255, 0.012)),
+		linear-gradient(180deg, rgba(251, 146, 60, 0.03), rgba(255, 255, 255, 0.012)),
 		var(--surface-bg-strong);
 	box-shadow:
 		0 8px 22px var(--shadow),
@@ -65,7 +65,7 @@
 	position: absolute;
 	inset: 0;
 	pointer-events: none;
-	background: linear-gradient(135deg, rgba(216, 106, 97, 0.06), transparent 42%);
+	background: linear-gradient(135deg, rgba(251, 146, 60, 0.08), transparent 42%);
 	opacity: 0.42;
 }
 
@@ -155,7 +155,7 @@
 .contact__info-item:hover {
 	transform: translateY(-2px) scale(1.01);
 	border-color: var(--surface-border-strong);
-	background: rgba(216, 106, 97, 0.045);
+	background: rgba(251, 146, 60, 0.06);
 	box-shadow: 0 10px 22px var(--shadow);
 }
 
@@ -269,9 +269,9 @@
 }
 
 .contact__field:focus {
-	border-color: rgba(216, 106, 97, 0.2);
+	border-color: rgba(251, 146, 60, 0.28);
 	background: rgba(255, 255, 255, 0.035);
-	box-shadow: 0 0 0 4px rgba(216, 106, 97, 0.06);
+	box-shadow: 0 0 0 4px rgba(251, 146, 60, 0.1);
 }
 
 .contact__field--textarea {
@@ -286,7 +286,7 @@
 	justify-content: center;
 	gap: 10px;
 	padding: 12px 16px;
-	border: 1px solid rgba(216, 106, 97, 0.12);
+	border: 1px solid rgba(251, 146, 60, 0.22);
 	border-radius: 13px;
 	background: var(--accent-soft);
 	color: var(--text);
@@ -300,8 +300,8 @@
 
 .contact__submit:hover {
 	transform: translateY(-2px);
-	border-color: rgba(216, 106, 97, 0.18);
-	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16), 0 0 14px rgba(216, 106, 97, 0.06);
+	border-color: rgba(251, 146, 60, 0.28);
+	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16), 0 0 14px rgba(251, 146, 60, 0.1);
 }
 
 html[data-theme='light'] .contact__copy,
@@ -311,7 +311,7 @@ html[data-theme='light'] .contact__card {
 
 html[data-theme='light'] .contact__copy::before,
 html[data-theme='light'] .contact__card::before {
-	background: linear-gradient(135deg, rgba(183, 79, 70, 0.06), transparent 42%);
+	background: linear-gradient(135deg, rgba(234, 88, 12, 0.08), transparent 42%);
 }
 
 html[data-theme='light'] .contact__field::placeholder {
@@ -340,7 +340,7 @@ html[data-theme='light'] .contact__card {
 }
 
 html[data-theme='light'] .contact__info-item:hover {
-	background: rgba(183, 79, 70, 0.05);
+	background: rgba(234, 88, 12, 0.06);
 }
 
 html[data-theme='light'] .contact__field::placeholder {

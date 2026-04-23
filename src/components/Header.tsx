@@ -4,8 +4,8 @@ import '../styles/header.css'
 
 const navigationItems = [
   { label: 'Sobre mim', href: '#sobre-mim' },
-  { label: 'Habilidades', href: '#habilidades' },
   { label: 'Projetos', href: '#projects' },
+  { label: 'Habilidades', href: '#habilidades' },
   { label: 'Contato', href: '#contact' },
 ]
 
@@ -43,7 +43,7 @@ export function Header() {
   }
 
   return (
-    <header className="header">
+    <header className={`header ${isMenuOpen ? 'header--menu-open' : ''}`}>
       <div className="header__inner">
         <a href="#home" className="header__brand">
           Luiz Monteiro

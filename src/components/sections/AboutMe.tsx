@@ -44,10 +44,9 @@ export function AboutMe() {
 					Desenvolvedor Front-end
 				</motion.h2>
 				<motion.p className="about__description" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.55, delay: 0.2 }}>
-					Desenvolvedor front-end com foco na criação de interfaces modernas, dinâmicas e responsivas,
-					sempre priorizando experiência do usuário e qualidade visual. Tenho experiência com HTML, CSS e
-					JavaScript, e sigo em constante evolução para entregar soluções funcionais, bem estruturadas e de
-					alto valor para o usuário.
+					Desenvolvedor front-end focado em criar interfaces modernas, intuitivas e responsivas, com atenção
+					à experiência do usuário, performance e acabamento visual. Estou sempre evoluindo para transformar
+					ideias em soluções funcionais, bem estruturadas e de alto impacto.
 				</motion.p>
 				<motion.div className="about__links" aria-label="Contatos profissionais" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.55, delay: 0.25 }}>
 				<a className="about__link" href="https://www.linkedin.com/in/luizmonteiroo/" target="_blank" rel="noreferrer">
